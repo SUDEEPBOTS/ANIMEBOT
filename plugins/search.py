@@ -66,7 +66,7 @@ async def group_search(client, message):
             buttons = InlineKeyboardMarkup([
     [InlineKeyboardButton(f"🚀 {btn_open_text}", url=website_link)],
     [
-        InlineKeyboardButton("💝 ɪɴᴅᴇx", callback_data="support"),
+        InlineKeyboardButton("💝 ɪɴᴅᴇx", url="https://t.me/+ztVvubasBehjZDA1"),
         InlineKeyboardButton("🍷ᴀᴅᴅ ᴍᴇ", url="https://t.me/ANIMEFINDRRBOT?startgroup=true")
     ],
     [InlineKeyboardButton(f"❌ {btn_close_text}", callback_data="close_msg")]

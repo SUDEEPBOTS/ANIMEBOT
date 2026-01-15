@@ -64,9 +64,13 @@ async def group_search(client, message):
             btn_close_text = to_small_caps("close")
 
             buttons = InlineKeyboardMarkup([
-                [InlineKeyboardButton(f"🚀 {btn_open_text}", url=website_link)],
-                [InlineKeyboardButton(f"❌ {btn_close_text}", callback_data="close_msg")]
-            ])
+    [InlineKeyboardButton(f"🚀 {btn_open_text}", url=website_link)],
+    [
+        InlineKeyboardButton("💝 ɪɴᴅᴇx", callback_data="support"),
+        InlineKeyboardButton("🍷ᴀᴅᴅ ᴍᴇ", url="https://t.me/ANIMEFINDRRBOT?startgroup=true")
+    ],
+    [InlineKeyboardButton(f"❌ {btn_close_text}", callback_data="close_msg")]
+])
 
             # Send Final Result
             final_msg = await message.reply_text(

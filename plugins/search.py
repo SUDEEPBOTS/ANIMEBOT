@@ -6,7 +6,7 @@ from config import API_URL
 from plugins.utils import to_small_caps # Helper for Small Caps
 
 # Trigger Words List (Standard English for matching logic)
-TRIGGERS = ["in hindi", "dubbed", "dual audio", "english sub", "season", "s1", "s2", "hindi"]
+TRIGGERS = ["in hindi", "dubbed", "dual audio", "english sub", "season", "s1", "s2", "hindi", "anime"]
 
 # Function to verify if message should trigger the bot
 def should_trigger(_, __, message):
@@ -78,7 +78,7 @@ async def group_search(client, message):
             await status_msg.delete()
 
             # ⏳ AUTO DELETE (2 Minutes / 120 Seconds)
-            await asyncio.sleep(120)
+            await asyncio.sleep(999)
             try:
                 await final_msg.delete()
                 # Optional: Delete user's message too

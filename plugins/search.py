@@ -21,7 +21,7 @@ async def is_anime_query(text):
     """
     try:
         completion = await groq_client.chat.completions.create(
-            model="llama3-8b-8192", # Ya koi bhi fast model jo available ho
+            model="llama-3.3-70b-versatile", # Ya koi bhi fast model jo available ho
             messages=[
                 {
                     "role": "system",

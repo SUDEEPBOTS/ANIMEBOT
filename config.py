@@ -8,8 +8,8 @@ API_HASH = os.getenv("API_HASH", "your_hash_here")
 BOT_TOKEN = os.getenv("BOT_TOKEN", "your_bot_token")
 
 # Ye tera FastAPI ka URL hai (Jahan main.py chal raha hai)
-API_URL = os.getenv("API_URL", "http://localhost:8000") 
-
+#API_URL = os.getenv("API_URL", "http://localhost:8000") 
+API_URL = "https://anime-api-48m3.onrender.com"
 # 🟢 Groq API Key (AI Check ke liye)
 # Isko apni .env file mein zaroor add karna: GROQ_API_KEY=gsk_...
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "your_groq_api_key_here")
